@@ -92,3 +92,46 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+.filters {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.filters__btn--selected {
+  background: #747bff;
+  color: white;
+}
+
+/* UNICORNIO */
+.unicorn-container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  pointer-events: none;
+  animation: fly 2s ease-in-out infinite alternate;
+}
+
+.unicorn {
+  width: 150px;
+  position: relative;
+}
+
+.fire {
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+
+@keyframes fly {
+  from {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
